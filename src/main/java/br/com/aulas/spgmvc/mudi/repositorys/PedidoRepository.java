@@ -15,12 +15,13 @@ import br.com.aulas.spgmvc.mudi.model.Pedido;
 public interface PedidoRepository extends JpaRepository<Pedido, Long>{
 	
 	@PersistenceContext
-	
+
+	// classe utilizada no jpa sem o spring boot
 //	private EntityManager entityManager;
 	
 	public List<Pedido> findAll();
-		
-		
+
+	// Método antigo utilizando jpa
 //		Query query = entityManager.createQuery("select p from Pedido p", Pedido.class);
 //		List<Pedido> listaPedidos = query.getResultList();
 //		return listaPedidos;
